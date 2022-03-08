@@ -1,0 +1,14 @@
+clear; close all;
+I = imread('input/AlfredoBorba_TuscanLandscape.jpg');
+I = rgb2gray(I);
+row =150;
+for i = 1:608
+intensity(i) = I(row,i);
+I(row,j,1)
+end
+
+subplot(1,2,1);
+imshow(I);
+
+%plot(1:608,intensity);
+colormap
